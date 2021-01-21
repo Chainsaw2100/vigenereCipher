@@ -1,9 +1,10 @@
-import sys
 import string
+import sys
 from itertools import product
-import numpy as np
-from PyQt5 import QtCore, QtGui, QtWidgets
 from math import sqrt
+
+import numpy as np
+from PyQt5 import QtCore, QtWidgets
 
 sys._excepthook = sys.excepthook
 
@@ -108,8 +109,6 @@ class Ui_OtherWindow(object):
     def okk(self):
         global i2
         self.lineEdit_2.setText(listk[i2])
-
-
 
     def setupUi(self, OtherWindow):
         OtherWindow.setObjectName("OtherWindow")
@@ -458,5 +457,3 @@ if __name__ == "__main__":
         sys.exit(app.exec_())
     except:
         print("Exiting")
-
-
